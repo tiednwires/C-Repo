@@ -13,7 +13,8 @@ I could have included better error explainations. Instead of just stating that t
 
 4) Which pieces of the code did you find most challenging to write, and how did you overcome this? What tools or resources are you adding to your support network?
 
-Nothing was too difficult. If I had to say one thing, it would be learning the vector of pairs and using it. I Googled and watched YouTube for information on using it. 
+Nothing was too difficult. If I had to say one thing, it would be learning the vector of pairs and using it. I Googled and watched YouTube for information on using it. I have added a lot of tools to my belt during this class, one is 
+simply YouTube. There is a video for just about everything. Another is StackOverflow for asking the community for help.
 
 5) What skills from this project will be particularly transferable to other projects or course work?
 
