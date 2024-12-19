@@ -1,41 +1,39 @@
-//
-// Created by Chuck Mills on 12/13/24.
-//
-
 #ifndef GROCERYITEMS_H
 #define GROCERYITEMS_H
 
 #include <iostream>
-#include <string>
-#include <vector>
 #include <fstream>
+#include <vector>
+#include <string>
+
 using namespace std;
 
-class Grocerytracker {
+// Class to manage the item tracking system
+class GroceryTracker {
 private:
-    vector<pair<string, int>> itemFrequency;
+    vector<pair<string, int>> itemFrequency; // Vector to hold item names and their frequencies
 
+    // Private method to load data from file into the vector
     void loadDataFromFile(const string& inventoryFileName);
 
+    // Private method to create a backup file
     void createBackupFile(const string& backupFileName);
 
-    void findItemIndex(const string& itemName)const;
+    // Helper function to find an item in the vector
+    int findItemIndex(const string& itemName) const;
 
 public:
-    //constructor to load data and create backup file
+    // Constructor to load data and create backup file
     GroceryTracker(const string& inventoryFileName, const string& backupFileName);
 
-    //method to get frequency of item
-    void getItemFrequency()const;
+    // Method to get the frequency of a specific item
+    void getItemFrequency() const;
 
-    //method to print frequency of an item
-    void printItemFrequency()const;
+    // Method to print the frequency of all items
+    void printItemFrequencyList() const;
 
-    //method to print frequency of all items
-    void printAllItems()const;
-
-    //method to print histogram
-    void printHistogram()const;
+    // Method to print the histogram of item frequencies
+    void printHistogram() const;
 };
 
-#endif //GROCERYITEMS_H
+#endif // GROCERYITEMS_H
